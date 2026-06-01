@@ -1,17 +1,30 @@
-# starter_pack
+#  StarterPack
 
-A new Flutter project.
+StarterPack, kullanıcıların yeni bir telefon kurarken veya cihazlarını sıfırladıktan sonra ihtiyaç duyacakları uygulamaları hızlıca keşfedip Play Store üzerinden indirmelerini sağlayan Flutter tabanlı bir mobil uygulamadır.
 
-## Getting Started
+##  Özellikler
 
-This project is a starting point for a Flutter application.
+*  Kategori bazlı uygulama listesi (Sosyal Medya, Düzenleme, Yazılım vb.)
+*  Uygulama isimleri, açıklamaları ve ikonları
+*  Tek tık ile Google Play Store’a yönlendirme
+*  Mock data ile çalışan yapı 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+##  Proje Amacı
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Yeni telefon alan yada Telefonu sıfırlayan kullanıcılar genellikle aynı uygulamaları tekrar tekrar manuel olarak yükler.
+StarterPack bu süreci kolaylaştırmayı hedefler ve uygulamaları kategorilere ayırarak hızlı erişim sağlar.
+
+##  Kullanılan Teknolojiler
+
+* Flutter
+* Dart
+
+##  Mevcut Sürüm
+
+v1.0 (MVP)
+
+
+
+
+
