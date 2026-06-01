@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:installed_apps/installed_apps.dart';
 import 'package:starter_pack/features/Mock%20Datas/datas.dart';
 import 'package:starter_pack/features/models/category_model.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -13,12 +14,30 @@ class AppView extends StatefulWidget {
 class _AppViewState extends State<AppView> {
   late Datas datas;
   late final List<CategoryModel> categories;
+  final Map<String, bool> installedApps = {};
 
   @override
   void initState() {
     super.initState();
     datas = Datas();
     categories = datas.apps();
+    loadInstalledApps();
+  }
+
+  Future<void> loadInstalledApps() async {
+    for (final category in categories) {
+      for (final app in category.apps!) {
+        final installed = await checkApp(app.packageName!);
+
+        installedApps[app.packageName!] = installed ?? false;
+      }
+    }
+
+    setState(() {});
+  }
+
+  Future<bool?> checkApp(String packageName) async {
+    return await InstalledApps.isAppInstalled(packageName);
   }
 
   Future<void> openStore(String url) async {
@@ -55,9 +74,15 @@ class _AppViewState extends State<AppView> {
                   subtitle: Text(app.description!),
                   trailing: IconButton(
                     onPressed: () {
+                      if (installedApps[app.packageName!] == true) {
+                        return;
+                      }
+
                       openStore(app.url!);
                     },
-                    icon: Icon(Icons.download),
+                    icon: Icon(
+                      installedApps[app.packageName!] == true ? Icons.check_circle : Icons.download,
+                    ),
                   ),
                 ),
               ),
