@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:installed_apps/installed_apps.dart';
-import 'package:starter_pack/features/Mock%20Datas/datas.dart';
-import 'package:starter_pack/features/models/category_model.dart';
+import 'package:starter_pack/Features/Mock%20Datas/datas.dart';
+import 'package:starter_pack/Features/models/category_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppView extends StatefulWidget {
@@ -69,7 +69,23 @@ class _AppViewState extends State<AppView> {
 
               ...category.apps!.map(
                 (app) => ListTile(
-                  leading: Image.network(app.iconUrl!, width: 40, height: 40),
+                  leading: CircleAvatar(
+                    radius: 20,
+                    backgroundColor: Colors.grey.shade100,
+                    child: ClipOval(
+                      child: Image.network(
+                        app.iconUrl!,
+                        width: 40,
+                        height: 40,
+                        fit: BoxFit.cover,
+                        errorBuilder: (_, __, ___) => const Icon(Icons.apps, size: 20),
+                        loadingBuilder: (_, child, progress) {
+                          if (progress == null) return child;
+                          return const SizedBox.shrink();
+                        },
+                      ),
+                    ),
+                  ),
                   title: Text(app.appName!),
                   subtitle: Text(app.description!),
                   trailing: IconButton(
