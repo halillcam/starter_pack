@@ -7,6 +7,7 @@ class Datas {
   List<CategoryModel> apps() {
     return [
       CategoryModel(categoryName: "Sosyal Medya", apps: appList.socialMediaApps),
+      CategoryModel(categoryName: "Müzik", apps: appList.musicApps),
       CategoryModel(categoryName: "Tarayıcı", apps: appList.browserApps),
       CategoryModel(categoryName: "Yapay Zeka ", apps: appList.aiApps),
       CategoryModel(categoryName: "Navigasyon ", apps: appList.navigationApps),

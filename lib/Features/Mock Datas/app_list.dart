@@ -36,6 +36,14 @@ class AppList {
       url: "https://play.google.com/store/apps/details?id=org.telegram.messenger",
     ),
     AppModel(
+      appName: "YouTube",
+      description: "Video İzleme Uygulaması",
+      packageName: "com.google.android.youtube",
+      iconUrl:
+          "https://images.seeklogo.com/logo-png/27/1/youtube-icon-logo-png_seeklogo-270054.png",
+      url: "https://play.google.com/store/apps/details?id=com.google.android.youtube",
+    ),
+    AppModel(
       appName: "TikTok",
       description: "Sosyal Medya Uygulaması",
       packageName: "com.zhiliaoapp.musically",
@@ -49,6 +57,35 @@ class AppList {
       packageName: "com.snapchat.android",
       iconUrl: "https://images.seeklogo.com/logo-png/24/1/snapchat-logo-png_seeklogo-249555.png",
       url: "https://play.google.com/store/apps/details?id=com.snapchat.android",
+    ),
+  ];
+
+  /// [MUSIC]
+
+  final List<AppModel> musicApps = [
+    AppModel(
+      appName: "Spotify",
+      description: "Popüler Müzik Uygulaması",
+      packageName: "com.spotify.music",
+      iconUrl:
+          "https://images.seeklogo.com/logo-png/26/1/spotify-2015-logo-png_seeklogo-266802.png",
+      url: "https://play.google.com/store/apps/details?id=com.spotify.music",
+    ),
+    AppModel(
+      appName: "YouTube Music",
+      description: "Popüler Müzik Uygulaması",
+      packageName: "com.google.android.apps.youtube.music",
+      iconUrl:
+          "https://images.seeklogo.com/logo-png/32/1/youtube-music-logo-png_seeklogo-327636.png",
+      url: "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music",
+    ),
+    AppModel(
+      appName: "Apple Music",
+      description: "Popüler Müzik Uygulaması",
+      packageName: "com.apple.android.music",
+      iconUrl:
+          "https://images.seeklogo.com/logo-png/43/1/apple-music-icon-logo-png_seeklogo-438943.png",
+      url: "https://play.google.com/store/apps/details?id=com.apple.android.music",
     ),
   ];
 
