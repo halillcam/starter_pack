@@ -26,7 +26,7 @@ v1.0 (MVP)
 
 ![UI detail ](https://i.hizliresim.com/s9jmb5o.png)
 
-![UI detail ](https://i.hizliresim.com/9xerarf.png)
+![UI detail ](https://i.hizliresim.com/kyvh7ua.png)
 
 
 
