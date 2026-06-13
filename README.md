@@ -24,6 +24,10 @@ StarterPack bu süreci kolaylaştırmayı hedefler ve uygulamaları kategorilere
 
 v1.0 (MVP)
 
+![UI detail ](https://i.hizliresim.com/jzbsz8i.png)
+
+![UI detail ](https://i.hizliresim.com/9xerarf.png)
+
 
 
 
